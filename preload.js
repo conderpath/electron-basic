@@ -1,12 +1,8 @@
-const fs = require('fs')
-console.log(fs)
-
 const { contextBridge } = require('electron')
-const { platform } = require('os')
 
-contextBridge.exposeInMainWorld('_preData', {
+contextBridge.exposeInMainWorld('_w', {
   node: () => process.versions.node,
   chrome: () => process.versions.chrome,
   electron: () => process.versions.electron,
-  platform: process.env.platform
+  platform: process.platform
 })

@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>首页</title>
-</head>
-<body>
-  <h1>hello123</h1>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>来自 Electron 渲染器的问好！</title>
+  </head>
+  <body>
+    <h1>来自 Electron 渲染器的问好！</h1>
+    <p>👋</p>
+    <p id="info"></p>
+  </body>
   <script src="./render/app.js"></script>
-</body>
 </html>

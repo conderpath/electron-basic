@@ -8,8 +8,9 @@ const createWindow = () => {
       preload: path.resolve(__dirname, './preload.js')
     }
   })
-
   win.loadFile('index.html')
+  // 打开开发者工具控制台
+  win.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {
