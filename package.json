@@ -1,0 +1,15 @@
+{
+  "name": "electron-basic",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "conderpath",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec electron .",
+    "elec": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^30.0.2"
+  }
+}
