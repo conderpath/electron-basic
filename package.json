@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "electron": "^30.0.2"
+  },
+  "dependencies": {
+    "electron-win-state": "^1.1.22"
   }
 }
